@@ -1,4 +1,14 @@
-A sample command-line application.
+# RssWeibo
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+单纯拿来练 Dart 的，没啥价值。但是对于那些喜欢刷微博的人来说，但是又不想浪费时间的人来说是个不错的选择，比如你还在暗恋哪个妹纸、或者想第一时间收到大牛的新微博
+。
+
+这个爬虫会比较上一次和当前的结果，然后把最新的微博的关键信息提炼出来，用邮件的形式通知你。
+
+## 执行
+* 在 pyutils/config.json 下面配置你的邮箱账号，暂时代码只支持 QQ 邮箱。
+* 执行 dart bin/main.dart id(follow 的微博 id） receiver@qq.com(接收的邮箱账号)
+ 
+
+
+想跑定时任务的，可以自己配置。
