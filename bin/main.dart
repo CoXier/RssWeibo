@@ -28,9 +28,9 @@ main(List<String> arguments) async {
         unReadList.add(weibo);
       }
     }
-    // 保存数据
-    file.writeAsString(newData);
     if (unReadList.isNotEmpty) {
+      // 保存数据，只有数据发生变化时，才更新文件
+      file.writeAsString(newData);
       Mail().sendEmail(unReadList, receiver);
     }
   } else {
