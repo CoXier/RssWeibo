@@ -1,3 +1,4 @@
+#coding:utf-8
 import smtplib
 from email.mime.text import MIMEText
 from email.utils import formataddr
@@ -9,7 +10,6 @@ import os
 if __name__ == '__main__':
     print("========= Read config ==========")
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    print(current_dir)
     json_file = os.path.join(current_dir, 'config.json')
     json_data = json.load(open(json_file))
     print(json_data)

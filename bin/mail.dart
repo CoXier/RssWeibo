@@ -11,7 +11,7 @@ class Mail {
     }
     print(message);
 
-    Process.run('python',
+    Process.run('python3',
         ['pyutils/mail_utils.py', receiver, message]).then((
         ProcessResult results) {
       print(results.stdout);

@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:SecretlyFollowHerWeibo/SecretlyFollowHerWeibo.dart' as SecretlyFollowHerWeibo;
 import 'spider.dart';
 import 'weibo_data.dart';
 import 'weibo.dart';
