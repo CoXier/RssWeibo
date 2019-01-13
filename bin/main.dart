@@ -30,7 +30,9 @@ main(List<String> arguments) async {
     }
     // 保存数据
     file.writeAsString(newData);
-    Mail().sendEmail(unReadList, receiver);
+    if (unReadList.isNotEmpty) {
+      Mail().sendEmail(unReadList, receiver);
+    }
   } else {
     file.createSync(recursive: true);
     // 第一次查询的时候，直接写入文件
