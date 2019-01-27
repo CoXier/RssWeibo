@@ -6,9 +6,8 @@
 这个爬虫会比较上一次和当前的结果，然后把最新的微博的关键信息提炼出来，用邮件的形式通知你。
 
 ## 执行
-* 在 pyutils/config.json 下面配置你的邮箱账号，暂时代码只支持 QQ 邮箱。
-* 执行 dart bin/main.dart id(follow 的微博 id） receiver@qq.com(接收的邮箱账号)
+* 在 pyutils/config.json 下面配置你的邮箱账号和密码，暂时代码只支持 QQ 邮箱。
+* receiver_email: 你接受通知的邮箱
+* rss_weibo_id: 你想订阅的微博 ID
  
-
-
 想跑定时任务的，可以自己配置。
